@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href='fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='lib/moment.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='fullcalendar.min.js'></script>
+<script src="locale/zh-tw.js"></script>
+<script src='gcal.js'></script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyBGOHac0mgA1A9vOyisSlDv1F-UjqYDbBk',
+            events: {
+                googleCalendarId: 'k90218104@gcloud.csu.edu.tw',
+            }
+        });
+    });
+</script>
+<style media="screen">
+body {
+  background-color: #E0E0E0;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 950px) {
+  body {
+      padding-left: 150px;
+      padding-right: 150px;
+  }
+}
+
+.fc-left,
+.fc-right {
+  font-size: 25px;
+  color: #000;
+}
+
+.fc-today {
+  background-color: #DDD !important
+}
+
+.fc-toolbar {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888;
+  background-color: white;
+  text-shadow: 0 0 5px #C6C6C6;
+}
+
+.fc-view-container {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888;
+  background-color: white;
+}
+
+.fc-day-number {
+  font-size: 35px
+}
+</style>
+  </head>
+  <body>
+ <div id="calendar"></div>
+ <!-- <iframe src="https://calendar.google.com/calendar/embed?src=k90218104%40gcloud.csu.edu.tw&ctz=Asia/Taipei" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+  </body>
+</html>
